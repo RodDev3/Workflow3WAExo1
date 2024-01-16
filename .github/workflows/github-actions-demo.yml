@@ -32,6 +32,9 @@ jobs:
         - name: "Print php version"
           run: "php --version"
 
+        - name: "Composer Install"
+          run: composer install
+
         - name: "Lancement des tests"
           run: .\vendor\bin\phpunit --coverage-html coverage --coverage-clover coverage/clover.xml
 
