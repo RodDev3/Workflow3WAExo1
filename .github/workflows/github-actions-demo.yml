@@ -36,5 +36,5 @@ jobs:
           run: composer install
 
         - name: "Lancement des tests"
-          run: .\vendor\bin\phpunit --coverage-html coverage --coverage-clover coverage/clover.xml
+          run: vendor/bin/phpunit --coverage-html coverage --coverage-clover coverage/clover.xml
 
